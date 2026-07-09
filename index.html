@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy 20th, Hya</title>
+<meta name="description" content="A little something for Hya's 20th birthday." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero" data-sparkle>
+    <div class="hero-inner">
+      <p class="hero-line hero-line--1" data-fade>Hi Hya,</p>
+      <h1 class="hero-line hero-line--2" data-fade>Happy Birthday<br>My Love</h1>
+      <p class="hero-line hero-line--3" data-fade>you're turning 20 today.</p>
+    </div>
+    <button class="scroll-cue" data-fade aria-label="Scroll down">
+      <span>scroll</span>
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 1V21M7 21L1 15M7 21L13 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </section>
+
+  <!-- ================= LETTER ================= -->
+  <section id="letter-section" class="letter-section" data-sparkle>
+    <div class="letter-wrap">
+      <p class="eyebrow" data-reveal>from me, to you</p>
+      <article class="paper" data-reveal>
+        <div class="paper-inner">
+          <p class="paper-date">July 09, 2026</p>
+
+          <p class="paper-greeting">My dearest Hya,</p>
+
+          <p>
+            Replace this paragraph with your real letter to her. Write it exactly
+            how you'd say it out loud, don't worry about making it sound perfect.
+            Talk about a memory, something you love about her, or what this year
+            with her has meant to you.
+          </p>
+
+          <p>
+            You can add as many paragraphs as you want here. Each one will just
+            stack naturally, like turning to the next line of the same letter.
+          </p>
+
+          <p class="paper-signoff">
+            Forever yours,<br>
+            <span class="signature">[Your name]</span>
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= DIVIDER / LEAD-IN TO SURPRISE ================= -->
+  <section class="divider-section" data-sparkle>
+    <div class="stitch-line" aria-hidden="true"></div>
+    <p class="divider-text" data-reveal>there's more...</p>
+  </section>
+
+  <!-- ================= ENVELOPE REVEAL BUTTON ================= -->
+  <section id="envelope-section" class="envelope-section" data-sparkle>
+    <button id="envelope-btn" class="envelope-btn" data-reveal>
+      <svg class="envelope-icon" width="72" height="52" viewBox="0 0 72 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="68" height="48" rx="2" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M4 4L36 30L68 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="envelope-label">Click here if you're ready to see your surprise</span>
+      <span class="envelope-note">note: bring some tissues if u can handle it</span>
+    </button>
+  </section>
+
+  <!-- ================= FRIENDS' MESSAGES ================= -->
+  <section id="messages-section" class="messages-section" data-sparkle>
+    <div class="messages-header" data-reveal>
+      <p class="eyebrow">for you, from everyone who loves you</p>
+      <h2>The people who adore you<br>wanted you to know it.</h2>
+    </div>
+
+    <div id="messages-grid" class="messages-grid">
+      <!-- Cards are injected by script.js from data/messages.js -->
+    </div>
+
+    <p class="messages-footer" data-reveal>
+      that's everyone for now, but you are loved beyond what fits on a screen.
+    </p>
+  </section>
+
+  <script src="data/messages.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
